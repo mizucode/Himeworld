@@ -18,3 +18,13 @@ function change(item) {
     });
     item.classList.add("active");
 }
+
+function playMusic() {
+    var music = new Audio("../src/shogun.mp3");
+    music.play();
+}
+
+function stopMusic() {
+    music.pause();
+    music.currentTime = 0;
+}
