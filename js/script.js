@@ -1,18 +1,19 @@
-let navigation = document.querySelector(".navigation");
+// let navigation = document.querySelector(".navigation");
+let music = new Audio("../src/shogun.mp3");
+const buttons = document.querySelectorAll("ion-icon");
 
-navigation.onclick = function () {
-    navigation.classList.toggle("active");
-};
+// navigation.onclick = function () {
+//     navigation.classList.toggle("active");
+// };
 
-document.addEventListener("click", function (e) {
-    if (!navigation.contains(e.target)) {
-        navigation.classList.remove("active");
-    }
-});
+// document.addEventListener("click", function (e) {
+//     if (!navigation.contains(e.target)) {
+//         navigation.classList.remove("active");
+//     }
+// });
 
 // Bottom Bar
 function change(item) {
-    const buttons = document.querySelectorAll("ion-icon");
     buttons.forEach(function (obj) {
         obj.classList.remove("active");
     });
@@ -20,7 +21,6 @@ function change(item) {
 }
 
 function playMusic() {
-    var music = new Audio("../src/shogun.mp3");
     music.play();
 }
 
