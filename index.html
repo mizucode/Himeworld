@@ -1,68 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hime.World</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hime.World</title>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
 
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- Css -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Menu Navbar -->
-    <div class="bottom-bar">
-      <ion-icon name="home-outline" class="icon" onclick="change(this)">
-      </ion-icon>
-      <ion-icon name="folder-outline" class="icon" onclick="change(this)">
-      </ion-icon>
-      <ion-icon
-        name="add-circle-outline"
-        class="icon active"
-        onclick="change(this)"
-      >
-      </ion-icon>
-      <ion-icon name="person-outline" class="icon" onclick="change(this)">
-      </ion-icon>
-      <ion-icon name="image-outline" class="icon" onclick="change(this)">
-      </ion-icon>
-    </div>
-    <!-- Menu Navbar -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <!-- Css -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Menu Navbar -->
+        <div class="bottom-bar">
+            <a href="#about"
+                ><ion-icon
+                    name="home-outline"
+                    class="icon"
+                    onclick="change(this)"
+                >
+                </ion-icon
+            ></a>
 
-    <!-- Section Home -->
+            <ion-icon name="folder-outline" class="icon" onclick="change(this)">
+            </ion-icon>
+            <ion-icon
+                name="add-circle-outline"
+                class="icon active"
+                onclick="change(this)"
+            >
+            </ion-icon>
+            <ion-icon name="person-outline" class="icon" onclick="change(this)">
+            </ion-icon>
+            <ion-icon
+                name="settings-outline"
+                class="icon"
+                onclick="change(this)"
+            >
+            </ion-icon>
+        </div>
+        <!-- Menu Navbar -->
 
-    <section class="hero" id="home">
-      <main class="content">
-        <h1>Hime <span>World </span></h1>
-        <p>Step Into a Vast Magical World of Adventure.</p>
-        <a href="#" class="cte"></a>
-        <button type="button" value="sound" onclick="playMusic()">Play</button>
-        <button type="button" value="sound" onclick="stopMusic()">Stop</button>
-      </main>
-    </section>
+        <!-- Section Home -->
 
-    <!-- Section Home -->
+        <section class="hero" id="home">
+            <main class="content">
+                <h1>Hime <span>World </span></h1>
+                <p>Step Into a Vast Magical World of Adventure.</p>
+                <a href="#" class="cte"></a>
+                <button type="button" value="sound" onclick="playMusic()">
+                    Play
+                </button>
+                <button type="button" value="sound" onclick="stopMusic()">
+                    Stop
+                </button>
+            </main>
+        </section>
 
-    <!-- Script -->
+        <!-- Section Home -->
 
-    <!-- CDN -->
+        <!-- Banner -->
+        <section id="about" class="about">
+            <h2><span>Tri</span>via</h2>
+            <div class="container-a">
+                <div class="row">
+                    <div class="about-img">
+                        <img src="img/arisu.jpg" alt="Tentang Kami   " />
+                    </div>
 
-    <script src="js/script.js"></script>
+                    <div class="content">
+                        <div class="coverimg">
+                            <img src="/img/banner.png" alt="" />
+                            <h3>Hime</h3>
+                            <p>
+                                Hime is a petite teenage girl with lilac colored
+                                hair and violet eyes. She wears the standard
+                                female school uniform, with her accessories
+                                being a black beret on her head with a gray
+                                ribbon connected to it and a white pair of
+                                stockings with garterbelts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-a">
+                <div class="row">
+                    <div class="about-img">
+                        <img src="img/ayano.png" alt="Tentang Kami   " />
+                    </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-  </body>
+                    <div class="content">
+                        <div class="coverimg">
+                            <img src="/img/banner.png" alt="" />
+                            <h3>World</h3>
+                            <p>
+                                You have arrived in Teyvat — a fantasy world
+                                where the seven elements flow and converge. In
+                                the distant past, the Archons granted mortals
+                                unique elemental abilities...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner -->
+
+        <!-- Script -->
+
+        <!-- CDN -->
+
+        <script src="js/script.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+    </body>
 </html>

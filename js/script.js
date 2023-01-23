@@ -26,5 +26,4 @@ function playMusic() {
 
 function stopMusic() {
     music.pause();
-    music.currentTime = 0;
 }

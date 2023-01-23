@@ -17,7 +17,14 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg);
     color: #fff;
-    /* min-height: 3000px; */
+    min-height: 6000px;
+}
+
+#setting {
+    display: none;
+}
+#setting:active {
+    display: flex;
 }
 
 .bottom-bar {
@@ -124,6 +131,109 @@ body {
     background-color: #171717;
 }
 /* Menu */
+
+/* About */
+.about,
+.menu,
+.contact {
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 10em;
+    margin-left: auto;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-top: 8rem;
+    padding-top: 2rem;
+}
+
+.about h2 span,
+.menu h2 span,
+.contact span {
+    color: var(--primary);
+}
+
+.container-a {
+    padding-bottom: 10rem;
+}
+.about .row {
+    display: flex;
+    position: relative;
+    z-index: 69;
+}
+
+.about .row .about-img {
+    position: relative;
+    flex: 1 1 40rem;
+    z-index: 4;
+    margin-left: 1;
+}
+
+.about .row .about-img img {
+    width: 45rem;
+    margin-top: 1.7rem;
+    margin-left: 10rem;
+}
+
+.about .content {
+    margin-left: 45rem;
+    margin-top: 2rem;
+    flex: 1 1 35rem;
+    position: absolute;
+    z-index: 70;
+}
+
+.about .content h3 {
+    margin-top: 10rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .content h3 span {
+    color: var(--primary);
+}
+
+.about .content .coverimg {
+    position: relative;
+    z-index: 98;
+    top: 0px;
+}
+
+.about .content .coverimg p {
+    top: 20px;
+
+    margin-left: 4rem;
+    margin-top: 5rem;
+    height: 30rem;
+    width: 20rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #171717;
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+}
+.about .row .content .coverimg h3 {
+    top: 20px;
+    margin-top: 1.5rem;
+    margin-left: 14%;
+    height: 20rem;
+    width: 20rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #171717;
+    z-index: 99;
+    position: absolute;
+    text-align: center;
+}
+
+/* About */
 
 /* Media */
 @media (max-width: 768px) {
