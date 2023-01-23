@@ -104,7 +104,6 @@ body {
 
 .hero .content p {
     font-size: 1.6rem;
-    margin-top: -1rem;
     line-height: 1.4;
     font-weight: 500;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
@@ -133,37 +132,36 @@ body {
 /* Menu */
 
 /* About */
-.about,
-.menu,
-.contact {
+.about {
     margin: 0 auto;
     justify-content: center;
     margin-top: 10em;
     margin-left: auto;
 }
 
-.about h2,
-.menu h2,
-.contact h2 {
+.about h2 {
     text-align: center;
     font-size: 2.6rem;
     margin-top: 8rem;
     padding-top: 2rem;
 }
 
-.about h2 span,
-.menu h2 span,
-.contact span {
+.about h2 span {
     color: var(--primary);
 }
 
 .container-a {
     padding-bottom: 10rem;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30rem;
 }
 .about .row {
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
     z-index: 69;
+    margin: 0 auto;
 }
 
 .about .row .about-img {
@@ -235,8 +233,22 @@ body {
 
 /* About */
 
+/* trivia */
+.trivia {
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 10em;
+    margin-left: auto;
+}
+
+.trivia h2 {
+    margin-top: 100rem;
+}
+
+/* trivia */
+
 /* Media */
-@media (max-width: 768px) {
+@media (max-width: 835px) {
     html {
         font-size: 62%;
     }
@@ -244,5 +256,80 @@ body {
         margin: 0.1em;
         padding: 0.6em;
         margin: 0.6em;
+    }
+
+    .hero .content {
+        padding: 10rem 7%;
+        max-width: 80rem;
+    }
+
+    .hero .content h1 {
+        font-size: 9em;
+        color: #fff;
+        text-shadow: 0px 0px 14px rgba(0, 0, 0, 0.5);
+        line-height: 1.2;
+    }
+
+    .hero .content p {
+        font-size: 3rem;
+        margin-top: -1rem;
+        line-height: 1.4;
+        font-weight: 500;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+        mix-blend-mode: difference;
+    }
+
+    .hero .content .cte {
+        font-weight: 500;
+        display: inline-block;
+        padding: 1rem 3rem;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        color: #fff;
+        background-color: var(--primary);
+        border-radius: 0.8rem;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -ms-border-radius: 0.8rem;
+        -o-border-radius: 0.8rem;
+    }
+
+    .about {
+        margin-top: 10rem;
+    }
+
+    .container-a .content .coverimg h3 {
+        padding-right: 7%;
+    }
+
+    .container-a .content .coverimg img {
+        width: 72%;
+    }
+}
+@media (max-width: 360px) {
+    html {
+        font-size: 30%;
+    }
+
+    .icon {
+        margin: 0.5em;
+        padding: 0.9em;
+    }
+
+    .container-a .content {
+        padding-top: rem;
+    }
+
+    .container-a .content .coverimg h3 {
+        display: none;
+    }
+
+    .container-a .content .coverimg p {
+        margin-top: 1rem;
+    }
+
+    .container-a .content .coverimg img {
+        width: 80%;
     }
 }
